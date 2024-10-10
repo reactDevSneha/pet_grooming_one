@@ -31,11 +31,15 @@
   #hero .carousel img {
     height: 100%;
   }
-  #about 
+  
 }
 @media (max-width: 576px) {
   #hero h1 {
     font-size: 3.5rem;
+  }
+  h2 {
+    max-width: 100%;
+    font-size: 3.3rem;
   }
   #hero .carousel-caption {
     padding-left: unset;
@@ -49,4 +53,5 @@
   #hero .main-btn.fill-btn {
     margin-top: 2.5rem;
   }
+
 }

@@ -1,0 +1,52 @@
+@media (max-width: 991px) {
+      /* nav section  */
+  .navbar {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    transition: all 0.4s linear;
+    background-color: var(--white-color) !important;
+  }
+  .header_wrapper .nav-item .nav-link {
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+  }
+  .header_wrapper .nav-item .nav-link:hover,
+  .header_wrapper .nav-item .nav-link:focus,
+  .header_wrapper .nav-item .nav-link.active {
+    color: var(----secondary-color-dark) !important;
+  }
+
+  .header_wrapper .navbar-toggler,
+  .header_wrapper .navbar-toggler:focus {
+    color: var(--black-color);
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+
+
+  /* hero section  */
+  #hero .carousel img {
+    height: 100%;
+  }
+  #about 
+}
+@media (max-width: 576px) {
+  #hero h1 {
+    font-size: 3.5rem;
+  }
+  #hero .carousel-caption {
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
+@media (max-width: 410px) {
+  #hero .main-btn {
+    margin: auto;
+  }
+  #hero .main-btn.fill-btn {
+    margin-top: 2.5rem;
+  }
+}

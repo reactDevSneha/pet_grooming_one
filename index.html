@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>pet grooming website</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <!-- fontawesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- own css  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive-style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- Toggle Switch -->
+ 
+    <!-- header design -->
+    <header class="header_wrapper">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-dog"></i> Pet Grooming.</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            <!-- <i class="fa-solid fa-bars navbar-toggler-icon"></i> -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#hero"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+            <div class="toggle-container ">
+              <input type="checkbox" class="checkbox" id="checkbox" />
+              <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- section -1  hero section -->
+    <section id="hero">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/slide1.jpg"
+              class="d-block w-100"
+              alt="Grooming Pet"
+            />
+            <div class="carousel-caption text-md-start text-center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h1 class="typing-effect">
+                      Your Pet’s Spa <br />
+                      Day Awaits!
+                    </h1>
+                    <p class="w-md-75 m-auto m-md-0">
+                      At Paws and Claws, we provide luxurious grooming services
+                      that ensure your pet feels relaxed and pampered, helping
+                      them look their best while promoting health and hygiene.
+                    </p>
+                    <div class="mt-5">
+                      <a href="#services" class="main-btn">Our Services</a>
+                      <a href="#book" class="main-btn fill-btn">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/slide2.jpg"
+              class="d-block w-100"
+              alt="Happy Dog"
+            />
+            <div class="carousel-caption text-md-start text-center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h1 class="typing-effect">
+                      Grooming with <br />
+                      Love
+                    </h1>
+                    <p class="w-md-75 m-auto m-md-0">
+                      Our team of experienced groomers treats every pet with the
+                      utmost care and affection, ensuring each grooming session
+                      is a delightful experience that strengthens your bond with
+                      them.
+                    </p>
+                    <div class="mt-5">
+                      <a href="#services" class="main-btn">Our Services</a>
+                      <a href="#book" class="main-btn fill-btn">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/slide3.jpg"
+              class="d-block w-100"
+              alt="Grooming Session"
+            />
+            <div class="carousel-caption text-md-start text-center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8">
+                    <h1 class="typing-effect">
+                      A Fresh Look for <br />
+                      Your Pet
+                    </h1>
+                    <p class="w-md-75 m-auto m-md-0">
+                      Let us transform your pet with our exceptional grooming
+                      services. From stylish haircuts to refreshing baths, we
+                      ensure your furry friend leaves looking fabulous and
+                      feeling amazing.
+                    </p>
+                    <div class="mt-5">
+                      <a href="#services" class="main-btn">Our Services</a>
+                      <a href="#book" class="main-btn fill-btn">Book Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 2 about us -->
+    <section id="about" class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center my-5">
+            <h2>About Us</h2>
+            <p>
+              At Paws and Claws, we are dedicated to providing the best grooming
+              services for your furry friends. Our experienced team treats every
+              pet with love and care, ensuring they leave looking fabulous and
+              feeling great.
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center py-5">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <h3>Our Mission</h3>
+            <p>
+              We believe that every pet deserves a pampering experience. Our
+              mission is to enhance the bond between pets and their owners
+              through professional grooming and care.
+            </p>
+            <ul class="about-list">
+              <li>Expert grooming services</li>
+              <li>Passionate and caring staff</li>
+              <li>Safe and hygienic environment</li>
+              <li>Customized grooming packages</li>
+            </ul>
+            <div class="mt-5">
+              <button class="main-btn fill-btn">Learn More</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="card position-relative"
+              style="border-radius: 0.5rem; overflow: hidden"
+            >
+              <img
+                src="images/about/about.jpg"
+                class="img-fluid"
+                alt="About Us Image"
+              />
+              <div class="video-icon">
+                <i class="fas fa-play-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section -2 Services -->
+    <section id="services" class="wrapper bg-light-blue">
+      <div class="container">
+        <h2 class="text-center">Our Grooming Services</h2>
+        <p class="text-center">
+          We offer a range of grooming services to keep your pets looking and
+          feeling their best.
+        </p>
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/services/bathing.jpg"
+                class="card-img-top"
+                alt="Bathing Service"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bathing</h5>
+                <p class="card-text">
+                  Gentle bathing with premium shampoos to keep your pet's coat
+                  healthy and shiny.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/services/hair-cutting.jpg"
+                class="card-img-top"
+                alt="Hair Cutting Service"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Hair Cutting</h5>
+                <p class="card-text">
+                  Expert hair cutting tailored to your pet's breed and style
+                  preferences.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="images/services/nail-cutting.jpg"
+                class="card-img-top"
+                alt="Nail Trimming Service"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nail Trimming</h5>
+                <p class="card-text">
+                  Regular nail trimming to ensure your pet's comfort and health.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section -4 Gallery -->
+    <section id="gallery" class="wrapper">
+      <div class="container">
+        <h2 class="text-center">After Gallery</h2>
+        <p class="text-center mb-5">
+          Check out our amazing transformations! Our grooming services leave
+          pets looking and feeling their best.
+        </p>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card position-relative overflow-hidden">
+              <img
+                src="images/gallery/gallery1.jpg"
+                class=""
+                alt="Before Grooming 1"
+              />
+              <div class="before-title">
+                <h5>After Grooming</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card position-relative overflow-hidden">
+              <img
+                src="images/gallery/gallery2.jpg"
+                class=""
+                alt="After Grooming 1"
+              />
+              <div class="before-title">
+                <h5>After Grooming</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card position-relative overflow-hidden">
+              <img
+                src="images/gallery/gallery3.jpg"
+                class=""
+                alt="Before Grooming 2"
+              />
+              <div class="before-title">
+                <h5>After Grooming</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card position-relative overflow-hidden">
+              <img
+                src="images/gallery/gallery4.jpg"
+                class=""
+                alt="After Grooming 2"
+              />
+              <div class="before-title">
+                <h5>After Grooming</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card position-relative overflow-hidden">
+              <img
+                src="images/gallery/gallery5.jpg"
+                class=""
+                alt="Before Grooming 3"
+              />
+              <div class="before-title">
+                <h5>After Grooming</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card position-relative overflow-hidden">
+              <img
+                src="images/gallery/gallery6.jpg"
+                class=""
+                alt="After Grooming 3"
+              />
+              <div class="before-title">
+                <h5>After Grooming</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section -3 Testimonials -->
+    <section id="testimonials" class="wrapper bg-light-blue">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center">What Our Clients Say</h2>
+          <p class="text-center mb-5">
+            Our clients trust us to take care of their beloved pets. Here’s what
+            they have to say about our grooming services!
+          </p>
+        </div>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide mt-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <div class="card text-center">
+                    <img
+                      src="images/testimonials/test-1.jpg"
+                      class="card-img-top rounded-circle mx-auto"
+                      alt="Client 1"
+                      style="width: 150px; height: 150px"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        "I couldn't be happier with the grooming services! My
+                        dog always comes home looking amazing and so happy!"
+                      </p>
+                      <h5 class="card-title">— Sarah J.</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <div class="card text-center">
+                    <img
+                      src="images/testimonials/test-2.jpg"
+                      class="card-img-top rounded-circle mx-auto"
+                      alt="Client 2"
+                      style="width: 150px; height: 150px"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        "The staff are incredibly friendly and professional.
+                        They really love what they do!"
+                      </p>
+                      <h5 class="card-title">— John D.</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-8">
+                  <div class="card text-center">
+                    <img
+                      src="images/testimonials/test-3.jpg"
+                      class="card-img-top rounded-circle mx-auto"
+                      alt="Client 3"
+                      style="width: 150px; height: 150px"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        "I highly recommend this grooming service. They treat my
+                        cat like royalty!"
+                      </p>
+                      <h5 class="card-title">— Emily R.</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section -6 Contact Us -->
+    <section id="contact" class="wrapper">
+      <div class="container">
+        <div class="row text-center">
+          <h2>Contact Us</h2>
+          <p>
+            We’d love to hear from you! Please fill out the form below or reach
+            us at our location.
+          </p>
+        </div>
+        <div class="row py-5 align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div
+              class="card"
+              style="
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                border-radius: 0.5rem;
+                padding: 2rem;
+              "
+            >
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="main-btn fill-btn">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="map-container"
+              style="height: 100%; border-radius: 0.5rem; overflow: hidden"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434507387!2d144.95373531531656!3d-37.81627997975183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f3a02cf%3A0x5045675218ceed30!2sMelbourne%20Grooming%20Salon!5e0!3m2!1sen!2sau!4v1634200510123!5m2!1sen!2sau"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>About Us</h5>
+            <p>
+              Learn more about our grooming services and team dedicated to
+              making your pets look their best.
+            </p>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <h5>Follow Us</h5>
+            <div class="social-icons">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <h5>Newsletter</h5>
+            <form>
+              <div class="mb-2">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <button type="submit" class="main-btn">Subscribe</button>
+            </form>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#hero"><i class="fas fa-check-circle"></i> Home</a>
+              </li>
+              <li>
+                <a href="#services"
+                  ><i class="fas fa-check-circle"></i> Services</a
+                >
+              </li>
+              <li>
+                <a href="#gallery"
+                  ><i class="fas fa-check-circle"></i> Gallery</a
+                >
+              </li>
+              <li>
+                <a href="#conact"
+                  ><i class="fas fa-check-circle"></i> Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center mt-4">
+            <p>
+              &copy; 2024 Pet Grooming. All rights reserved.created by
+              <a
+                href="https://reactdevsneha.in/"
+                class="text-white-50 text-decoration-underline"
+                >reactdevsneha</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- section -scroll top button  -->
+    <a id="scrollToTopBtn" class="" href="#hero" style="display: none;">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- own js  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
